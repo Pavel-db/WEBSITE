@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dribas Pavel | IT-student</title>
+    <meta name="description" content="Сайт IT-студента: портфолио, услуги, контакты."/>
+    <link rel="stylesheet" href="layout.css" />
+</head>
+<body>
+    <header>
+        <!-- Фоновый SVG логотип из папки -->
+        <div class="logo-background">
+            <img src="img/555.png" alt="Фон" class="bg-svg">
+            <!-- SVG аббревиатура поверх логотипа из папки -->
+            <img src="img/pd.svg" alt="ПД" class="logo-overlay">
+        </div>
+
+        <!-- Меню навигации поверх логотипа -->
+        <nav class="main-nav">
+            <a href="#about">О себе</a>
+            <a href="#services">Услуги</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+
+        <!-- Меню для мобильного -->
+        <div class="dropdown">
+            <input type="checkbox" id="menu-check" class="menu-check" />
+            <label for="menu-check" class="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="menu-links">
+                <a href="#about">О себе</a>
+                <a href="#services">Услуги</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="black-box">
+                <p class="mini-title">Python • Web • Frontend</p>
+                <h1>Павел Дрибас</h1>
+                <p class="welcome">
+                    IT-студент и веб-разработчик. Создаю сайты, интерфейсы и небольшие приложения под бизнес-задачи.
+                </p>
+                <div class="buttons">
+                    <a class="btn primary" href="https://github.com" target="_blank" rel="noreferrer">
+                        Портфолио
+                    </a>
+                    <a class="btn secondary" href="#contacts">Связаться</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-heading">
+                <h2>О себе</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-photo">
+                    <img src="img/888.jpeg" alt="PD">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Я — студент IT-направления с интересом к веб-разработке, Python и созданию удобных пользовательских интерфейсов.
+                    </p>
+                    <p>
+                        Участвую в учебных и личных проектах, где разрабатываю интерфейсы, backend-части и небольшие web-приложения.
+                    </p>
+                    <ul class="skills">
+                        <li>Python</li>
+                        <li>HTML / CSS / JavaScript</li>
+                        <li>Frontend-разработка</li>
+                        <li>Работа с API</li>
+                        <li>Git / GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-heading">
+                <h2>Услуги</h2>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Веб-сайты</h3>
+                    <p>Создание лендингов и корпоративных сайтов с современным дизайном и адаптивной версткой.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Frontend</h3>
+                    <p>Разработка интерфейсов, работа с анимациями, доступностью и пользовательским опытом.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Python-проекты</h3>
+                    <p>Создание скриптов, автоматизаций, backend-частей и небольших веб-приложений.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="section-heading">
+                <h2>Портфолио</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="project-visual" style="background-image: url('img/image1.jpg');"></div>
+                    <div class="project-info">
+                        <h3>Landing Page</h3>
+                        <p>Адаптивный лендинг для IT-компании.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="project-visual" style="background-image: url('img/image2.jpg');"></div>
+                    <div class="project-info">
+                        <h3>CRM Dashboard</h3>
+                        <p>Интерфейс для управления задачами и клиентами.</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="project-visual" style="background-image: url('img/image3.jpg');"></div>
+                    <div class="project-info">
+                        <h3>Python Bot</h3>
+                        <p>Автоматизация рабочих процессов и уведомлений.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="section-heading">
+                <h2>Отзывы</h2>
+            </div>
+            <div class="review-grid">
+                <div class="review-card">
+                    <p>"Профессиональный подход, быстро и качественно выполнил задачу по верстке сайта."</p>
+                    <span>— Мария, владелец бизнеса</span>
+                </div>
+                <div class="review-card">
+                    <p>"Хорошо понимает потребности клиента и делает продукт удобным и современным."</p>
+                    <span>— Алексей, проектный менеджер</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="section-heading">
+                <h2>Контакты</h2>
+            </div>
+            <div class="contacts-wrap">
+                <div class="contact-box">
+                    <p><strong>Email:</strong> <a href="mailto:pavelgb@mail.ru">pavelgb@mail.ru</a></p>
+                    <p><strong>Телефон:</strong> <a href="tel:+79040953909">+7 (904) 095-39-09</a></p>
+                    <p><strong>Портфолио:</strong> <a href="https://github.com" target="_blank" rel="noreferrer">://github.com</a></p>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://t.me" target="_blank" rel="noreferrer">Telegram</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Павел Дрибас</h2>
+        <p>© 2026 Все права защищены</p>
+    </footer>
+</body>
+</html>
